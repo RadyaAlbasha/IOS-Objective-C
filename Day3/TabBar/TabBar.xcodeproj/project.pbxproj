@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E68D1EF2264C52400C3C36E /* ViewControllerTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E68D1EE2264C52400C3C36E /* ViewControllerTwo.m */; };
 		9E83AD5822649A4500C54A40 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E83AD5722649A4500C54A40 /* AppDelegate.m */; };
 		9E83AD5B22649A4500C54A40 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E83AD5A22649A4500C54A40 /* ViewController.m */; };
 		9E83AD5E22649A4500C54A40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E83AD5C22649A4500C54A40 /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E68D1ED2264C52400C3C36E /* ViewControllerTwo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerTwo.h; sourceTree = "<group>"; };
+		9E68D1EE2264C52400C3C36E /* ViewControllerTwo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTwo.m; sourceTree = "<group>"; };
 		9E83AD5322649A4500C54A40 /* TabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E83AD5622649A4500C54A40 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9E83AD5722649A4500C54A40 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,6 +75,8 @@
 				9E83AD6522649A4600C54A40 /* main.m */,
 				9E83AD6C22649B2100C54A40 /* SecondViewController.h */,
 				9E83AD6D22649B2100C54A40 /* SecondViewController.m */,
+				9E68D1ED2264C52400C3C36E /* ViewControllerTwo.h */,
+				9E68D1EE2264C52400C3C36E /* ViewControllerTwo.m */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E68D1EF2264C52400C3C36E /* ViewControllerTwo.m in Sources */,
 				9E83AD6E22649B2100C54A40 /* SecondViewController.m in Sources */,
 				9E83AD5B22649A4500C54A40 /* ViewController.m in Sources */,
 				9E83AD6622649A4600C54A40 /* main.m in Sources */,

@@ -1,22 +1,23 @@
 //
-//  SecondViewController.m
+//  ViewControllerTwo.m
 //  TabBar
 //
 //  Created by JETS Mobile Lab - 2 on 4/15/19.
 //  Copyright © 2019 ITI. All rights reserved.
 //
 
-#import "SecondViewController.h"
 #import "ViewControllerTwo.h"
-@interface SecondViewController ()
+
+@interface ViewControllerTwo ()
 
 @end
 
-@implementation SecondViewController
+@implementation ViewControllerTwo
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+     self.title = @"View Two";
 }
 
 /*
@@ -29,9 +30,4 @@
 }
 */
 
-- (IBAction)goToByNavigation:(UIButton *)sender {
-     ViewControllerTwo * VCTwo = [self.storyboard instantiateViewControllerWithIdentifier:@"secondView"];
-    
-    [self.navigationController pushViewController:VCTwo animated:NO];
-}
 @end
