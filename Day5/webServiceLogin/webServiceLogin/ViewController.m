@@ -30,6 +30,11 @@
     
     
     NSURL * url = [NSURL URLWithString:@"http://jets.iti.gov.eg/FriendsApp/services/user/register?name=yourName&phone=yourPhone"];
+    NSString *str =@"http://jets.iti.gov.eg/FriendsApp/services/user/register?name=yourName&phone=yourPhone";
+    str = [str stringByReplacingOccurrencesOfString:@"yourName" withString:_textFieldName.text];
+    
+    str = [str stringByReplacingOccurrencesOfString:@"yourPhone" withString:_textFieldPhone.text];
+    
     NSURLRequest * request = [NSURLRequest requestWithURL:url];
     NSURLConnection * connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
 }
@@ -52,7 +57,8 @@
     
     ///b3ml pars lel json w a2ra el data elly 3ayzaha
     NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:dataReceived options:NSJSONReadingAllowFragments error:nil];
-    NSString * str = [dict objectForKey:@"status"];
+    NSString * strStatus = [dict objectForKey:@"status"];
+    NSString * strResult = [dict objectForKey:@"result"];
     
 }
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error{
