@@ -19,6 +19,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     printf("viewDidLoad\n");
+    UISwipeGestureRecognizer *rec = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(dismissView)];
+    
+    rec.direction = UISwipeGestureRecognizerDirectionRight;
+    //[self.subView addGestureRecognizer:rec];
+    [self.view addGestureRecognizer:rec];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -31,6 +36,13 @@
     //completion called after finsh here!
 }
 
+- (IBAction)dismiss:(UIButton *)sender {
+    [self dismissView];
+}
+
+-(void) dismissView{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 /*
 #pragma mark - Navigation
 
@@ -41,7 +53,5 @@
 }
 */
 
-- (IBAction)dismiss:(UIButton *)sender {
-     [self dismissViewControllerAnimated:YES completion:nil];
-}
+
 @end
