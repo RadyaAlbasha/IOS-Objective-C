@@ -33,12 +33,13 @@
     [userDefaults setObject:str
                      forKey:@"name"];
     _myTextField.text = @"";
+    //to save even if the app closed
+    [userDefaults synchronize]; // like commit
 }
 
 - (IBAction)getDefaults:(UIButton *)sender {
     NSString *str = [userDefaults objectForKey:@"name"];
     [_myLable setText:str];
-    //to save even if the app closed
-    [userDefaults synchronize]; // like commit
+    
 }
 @end
