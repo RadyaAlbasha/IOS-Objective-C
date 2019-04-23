@@ -30,7 +30,8 @@
     NSURL * url = [NSURL URLWithString:@"https://maktoob.yahoo.com/?p=us"];
     NSURLRequest * request = [NSURLRequest requestWithURL:url];
     NSURLConnection * connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
-    [_webView loadRequest:request];
+    [connection start];
+   // [_webView loadRequest:request];
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response{
@@ -45,7 +46,9 @@
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection{
+    NSString* newStr = [[NSString alloc] initWithData:dataReceived encoding:NSUTF8StringEncoding];
     
+    [_webView loadHTMLString: newStr baseURL:nil];
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error{
