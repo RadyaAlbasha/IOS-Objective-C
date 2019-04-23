@@ -31,7 +31,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <action selector="nextName:" destination="BYZ-38-t0r" eventType="touchDragInside" id="QKC-vM-qmB"/>
+                                    <action selector="nextName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GOM-8n-02r"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWS-LW-1c7">
@@ -40,7 +40,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Previous"/>
                                 <connections>
-                                    <action selector="previousName:" destination="BYZ-38-t0r" eventType="touchDragInside" id="fpw-Vy-6qd"/>
+                                    <action selector="previousName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WYl-6J-bKR"/>
                                 </connections>
                             </button>
                         </subviews>
