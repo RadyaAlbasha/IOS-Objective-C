@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SecondViewController.h"
 
 @interface ViewController (){
     NSMutableData *dataReceived;
@@ -28,12 +29,12 @@
 
 - (IBAction)login:(UIButton *)sender {
     
-    
-    NSURL * url = [NSURL URLWithString:@"http://jets.iti.gov.eg/FriendsApp/services/user/register?name=yourName&phone=yourPhone"];
     NSString *str =@"http://jets.iti.gov.eg/FriendsApp/services/user/register?name=yourName&phone=yourPhone";
     str = [str stringByReplacingOccurrencesOfString:@"yourName" withString:_textFieldName.text];
     
     str = [str stringByReplacingOccurrencesOfString:@"yourPhone" withString:_textFieldPhone.text];
+    
+    NSURL * url = [NSURL URLWithString:str];
     
     NSURLRequest * request = [NSURLRequest requestWithURL:url];
     NSURLConnection * connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
@@ -59,6 +60,64 @@
     NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:dataReceived options:NSJSONReadingAllowFragments error:nil];
     NSString * strStatus = [dict objectForKey:@"status"];
     NSString * strResult = [dict objectForKey:@"result"];
+    
+    //creat alert
+    UIAlertController * alert = [UIAlertController
+                                 alertControllerWithTitle:strStatus
+                                 message:strResult
+                                 preferredStyle:UIAlertControllerStyleAlert];
+    
+    if([strStatus isEqualToString:@"FAILING"])
+    {
+        
+        //Add Buttons
+        
+        UIAlertAction* yesButton = [UIAlertAction
+                                    actionWithTitle:@"Ok"
+                                    style:UIAlertActionStyleDefault
+                                    handler:^(UIAlertAction * action) {
+                                        //Handle your yes please button action here
+                                        
+                                    }];
+        
+        UIAlertAction* noButton = [UIAlertAction
+                                   actionWithTitle:@"Try Again"
+                                   style:UIAlertActionStyleDefault
+                                   handler:^(UIAlertAction * action) {
+                                       //Handle no, thanks button
+                                       self->_textFieldPhone.text= @"";
+                                       self->_textFieldName.text = @"";
+                                   }];
+        
+        //Add your buttons to alert controller
+        
+        [alert addAction:yesButton];
+        [alert addAction:noButton];
+        
+        [self presentViewController:alert animated:YES completion:nil];
+    }
+    else{
+        
+        //Add Buttons
+        
+        UIAlertAction* yesButton = [UIAlertAction
+                                    actionWithTitle:@"Ok"
+                                    style:UIAlertActionStyleDefault
+                                    handler:^(UIAlertAction * action) {
+                                        //Handle your yes please button action here
+                                        //Move to another view
+                                        SecondViewController * VCTwo = [self.storyboard instantiateViewControllerWithIdentifier:@"secondView"];
+                                        
+                                        [self.navigationController pushViewController:VCTwo animated:YES];
+                                    }];
+        
+        //Add your buttons to alert controller
+        
+        [alert addAction:yesButton];
+        
+        [self presentViewController:alert animated:YES completion:nil];
+    }
+    
     
 }
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error{

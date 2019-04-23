@@ -13,6 +13,7 @@
 		9E3DD15E226E29EB00BCD04D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E3DD15D226E29EB00BCD04D /* Assets.xcassets */; };
 		9E3DD161226E29EB00BCD04D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E3DD15F226E29EB00BCD04D /* LaunchScreen.storyboard */; };
 		9E3DD164226E29EB00BCD04D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3DD163226E29EB00BCD04D /* main.m */; };
+		9E7CD6CA226EEE8A00F8E325 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7CD6C9226EEE8A00F8E325 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		9E3DD160226E29EB00BCD04D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E3DD162226E29EB00BCD04D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E3DD163226E29EB00BCD04D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9E7CD6C8226EEE8A00F8E325 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		9E7CD6C9226EEE8A00F8E325 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				9E3DD15F226E29EB00BCD04D /* LaunchScreen.storyboard */,
 				9E3DD162226E29EB00BCD04D /* Info.plist */,
 				9E3DD163226E29EB00BCD04D /* main.m */,
+				9E7CD6C8226EEE8A00F8E325 /* SecondViewController.h */,
+				9E7CD6C9226EEE8A00F8E325 /* SecondViewController.m */,
 			);
 			path = webServiceLogin;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E7CD6CA226EEE8A00F8E325 /* SecondViewController.m in Sources */,
 				9E3DD159226E29E400BCD04D /* ViewController.m in Sources */,
 				9E3DD164226E29EB00BCD04D /* main.m in Sources */,
 				9E3DD156226E29E400BCD04D /* AppDelegate.m in Sources */,
