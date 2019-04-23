@@ -14,6 +14,7 @@
 		9E7CD6E4226F063900F8E325 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E7CD6E2226F063900F8E325 /* LaunchScreen.storyboard */; };
 		9E7CD6E7226F063900F8E325 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7CD6E6226F063900F8E325 /* main.m */; };
 		9E7CD6EF226F066100F8E325 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E7CD6EE226F066000F8E325 /* MapKit.framework */; };
+		9E7CD6F2226F0E9D00F8E325 /* MADAnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7CD6F1226F0E9D00F8E325 /* MADAnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		9E7CD6E5226F063900F8E325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E7CD6E6226F063900F8E325 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9E7CD6EE226F066000F8E325 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9E7CD6F0226F0E9D00F8E325 /* MADAnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MADAnotation.h; sourceTree = "<group>"; };
+		9E7CD6F1226F0E9D00F8E325 /* MADAnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MADAnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +74,8 @@
 				9E7CD6E2226F063900F8E325 /* LaunchScreen.storyboard */,
 				9E7CD6E5226F063900F8E325 /* Info.plist */,
 				9E7CD6E6226F063900F8E325 /* main.m */,
+				9E7CD6F0226F0E9D00F8E325 /* MADAnotation.h */,
+				9E7CD6F1226F0E9D00F8E325 /* MADAnotation.m */,
 			);
 			path = MapLab1;
 			sourceTree = "<group>";
@@ -153,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E7CD6F2226F0E9D00F8E325 /* MADAnotation.m in Sources */,
 				9E7CD6DC226F062F00F8E325 /* ViewController.m in Sources */,
 				9E7CD6E7226F063900F8E325 /* main.m in Sources */,
 				9E7CD6D9226F062F00F8E325 /* AppDelegate.m in Sources */,
