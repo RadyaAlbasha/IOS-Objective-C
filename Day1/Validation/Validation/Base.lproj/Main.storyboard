@@ -38,7 +38,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Number"/>
                                 <connections>
-                                    <action selector="isNumber:" destination="BYZ-38-t0r" eventType="touchDragInside" id="kbl-sT-IZg"/>
+                                    <action selector="isNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1KC-GX-cE9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqB-zO-fY1">
@@ -47,7 +47,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Text"/>
                                 <connections>
-                                    <action selector="isText:" destination="BYZ-38-t0r" eventType="touchDragInside" id="JsV-Qn-y7E"/>
+                                    <action selector="isText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e9g-3M-WPj"/>
                                 </connections>
                             </button>
                         </subviews>
