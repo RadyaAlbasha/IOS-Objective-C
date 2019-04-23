@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>//3shan da framwork mesh file 3ndy
-@interface ViewController : UIViewController <MKMapViewDelegate>
+@interface ViewController : UIViewController <MKMapViewDelegate , CLLocationManagerDelegate>
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property CLLocationManager *locationManager;
 
 
 @end
