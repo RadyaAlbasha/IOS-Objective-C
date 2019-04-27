@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9CFD8F0B37AA505B33A772E5 /* libPods-ShowImagesusingSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D3BC8D574E38A1EE6A3BAD /* libPods-ShowImagesusingSDWebImage.a */; };
+		BA40ADAB22747ACA00C0BF1E /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = BA40ADAA22747ACA00C0BF1E /* apple.png */; };
+		BA6641442274719C007AFDA7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6641432274719C007AFDA7 /* AppDelegate.m */; };
+		BA6641472274719C007AFDA7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6641462274719C007AFDA7 /* ViewController.m */; };
+		BA66414A2274719C007AFDA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA6641482274719C007AFDA7 /* Main.storyboard */; };
+		BA66414D2274719D007AFDA7 /* ShowImagesusingSDWebImage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA66414B2274719D007AFDA7 /* ShowImagesusingSDWebImage.xcdatamodeld */; };
+		BA66414F227471A9007AFDA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA66414E227471A9007AFDA7 /* Assets.xcassets */; };
+		BA664152227471A9007AFDA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA664150227471A9007AFDA7 /* LaunchScreen.storyboard */; };
+		BA664155227471A9007AFDA7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA664154227471A9007AFDA7 /* main.m */; };
+		BA66415D2274729F007AFDA7 /* MyCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA66415C2274729F007AFDA7 /* MyCollectionViewController.m */; };
+		BA664160227472BA007AFDA7 /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA66415F227472BA007AFDA7 /* MyCollectionViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		53BA1F37E72D06919240B8AB /* Pods-ShowImagesusingSDWebImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowImagesusingSDWebImage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShowImagesusingSDWebImage/Pods-ShowImagesusingSDWebImage.debug.xcconfig"; sourceTree = "<group>"; };
+		592803035C92421324A1513F /* Pods-ShowImagesusingSDWebImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowImagesusingSDWebImage.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShowImagesusingSDWebImage/Pods-ShowImagesusingSDWebImage.release.xcconfig"; sourceTree = "<group>"; };
+		BA40ADAA22747ACA00C0BF1E /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
+		BA66413F2274719C007AFDA7 /* ShowImagesusingSDWebImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShowImagesusingSDWebImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA6641422274719C007AFDA7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BA6641432274719C007AFDA7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BA6641452274719C007AFDA7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BA6641462274719C007AFDA7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BA6641492274719C007AFDA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA66414C2274719D007AFDA7 /* ShowImagesusingSDWebImage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShowImagesusingSDWebImage.xcdatamodel; sourceTree = "<group>"; };
+		BA66414E227471A9007AFDA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA664151227471A9007AFDA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA664153227471A9007AFDA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA664154227471A9007AFDA7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BA66415B2274729F007AFDA7 /* MyCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewController.h; sourceTree = "<group>"; };
+		BA66415C2274729F007AFDA7 /* MyCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewController.m; sourceTree = "<group>"; };
+		BA66415E227472BA007AFDA7 /* MyCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
+		BA66415F227472BA007AFDA7 /* MyCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
+		D5D3BC8D574E38A1EE6A3BAD /* libPods-ShowImagesusingSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShowImagesusingSDWebImage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA66413C2274719C007AFDA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CFD8F0B37AA505B33A772E5 /* libPods-ShowImagesusingSDWebImage.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03116221A6268D108F2E34A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53BA1F37E72D06919240B8AB /* Pods-ShowImagesusingSDWebImage.debug.xcconfig */,
+				592803035C92421324A1513F /* Pods-ShowImagesusingSDWebImage.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AF8BD5BF7CAA84599EEE997D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5D3BC8D574E38A1EE6A3BAD /* libPods-ShowImagesusingSDWebImage.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA6641362274719C007AFDA7 = {
+			isa = PBXGroup;
+			children = (
+				BA6641412274719C007AFDA7 /* ShowImagesusingSDWebImage */,
+				BA6641402274719C007AFDA7 /* Products */,
+				03116221A6268D108F2E34A0 /* Pods */,
+				AF8BD5BF7CAA84599EEE997D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BA6641402274719C007AFDA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA66413F2274719C007AFDA7 /* ShowImagesusingSDWebImage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA6641412274719C007AFDA7 /* ShowImagesusingSDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				BA40ADAA22747ACA00C0BF1E /* apple.png */,
+				BA66415E227472BA007AFDA7 /* MyCollectionViewCell.h */,
+				BA66415F227472BA007AFDA7 /* MyCollectionViewCell.m */,
+				BA6641422274719C007AFDA7 /* AppDelegate.h */,
+				BA6641432274719C007AFDA7 /* AppDelegate.m */,
+				BA6641452274719C007AFDA7 /* ViewController.h */,
+				BA6641462274719C007AFDA7 /* ViewController.m */,
+				BA6641482274719C007AFDA7 /* Main.storyboard */,
+				BA66414E227471A9007AFDA7 /* Assets.xcassets */,
+				BA664150227471A9007AFDA7 /* LaunchScreen.storyboard */,
+				BA664153227471A9007AFDA7 /* Info.plist */,
+				BA664154227471A9007AFDA7 /* main.m */,
+				BA66414B2274719D007AFDA7 /* ShowImagesusingSDWebImage.xcdatamodeld */,
+				BA66415B2274729F007AFDA7 /* MyCollectionViewController.h */,
+				BA66415C2274729F007AFDA7 /* MyCollectionViewController.m */,
+			);
+			path = ShowImagesusingSDWebImage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA66413E2274719C007AFDA7 /* ShowImagesusingSDWebImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA664158227471A9007AFDA7 /* Build configuration list for PBXNativeTarget "ShowImagesusingSDWebImage" */;
+			buildPhases = (
+				D5AF23F16531A6D2222A0025 /* [CP] Check Pods Manifest.lock */,
+				BA66413B2274719C007AFDA7 /* Sources */,
+				BA66413C2274719C007AFDA7 /* Frameworks */,
+				BA66413D2274719C007AFDA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShowImagesusingSDWebImage;
+			productName = ShowImagesusingSDWebImage;
+			productReference = BA66413F2274719C007AFDA7 /* ShowImagesusingSDWebImage.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA6641372274719C007AFDA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = ITI;
+				TargetAttributes = {
+					BA66413E2274719C007AFDA7 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = BA66413A2274719C007AFDA7 /* Build configuration list for PBXProject "ShowImagesusingSDWebImage" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA6641362274719C007AFDA7;
+			productRefGroup = BA6641402274719C007AFDA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA66413E2274719C007AFDA7 /* ShowImagesusingSDWebImage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA66413D2274719C007AFDA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA664152227471A9007AFDA7 /* LaunchScreen.storyboard in Resources */,
+				BA66414F227471A9007AFDA7 /* Assets.xcassets in Resources */,
+				BA40ADAB22747ACA00C0BF1E /* apple.png in Resources */,
+				BA66414A2274719C007AFDA7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D5AF23F16531A6D2222A0025 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShowImagesusingSDWebImage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA66413B2274719C007AFDA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA6641472274719C007AFDA7 /* ViewController.m in Sources */,
+				BA66415D2274729F007AFDA7 /* MyCollectionViewController.m in Sources */,
+				BA664160227472BA007AFDA7 /* MyCollectionViewCell.m in Sources */,
+				BA6641442274719C007AFDA7 /* AppDelegate.m in Sources */,
+				BA664155227471A9007AFDA7 /* main.m in Sources */,
+				BA66414D2274719D007AFDA7 /* ShowImagesusingSDWebImage.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BA6641482274719C007AFDA7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA6641492274719C007AFDA7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA664150227471A9007AFDA7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA664151227471A9007AFDA7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA664156227471A9007AFDA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BA664157227471A9007AFDA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA664159227471A9007AFDA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53BA1F37E72D06919240B8AB /* Pods-ShowImagesusingSDWebImage.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShowImagesusingSDWebImage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JETS.ShowImagesusingSDWebImage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA66415A227471A9007AFDA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 592803035C92421324A1513F /* Pods-ShowImagesusingSDWebImage.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShowImagesusingSDWebImage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JETS.ShowImagesusingSDWebImage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA66413A2274719C007AFDA7 /* Build configuration list for PBXProject "ShowImagesusingSDWebImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA664156227471A9007AFDA7 /* Debug */,
+				BA664157227471A9007AFDA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA664158227471A9007AFDA7 /* Build configuration list for PBXNativeTarget "ShowImagesusingSDWebImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA664159227471A9007AFDA7 /* Debug */,
+				BA66415A227471A9007AFDA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BA66414B2274719D007AFDA7 /* ShowImagesusingSDWebImage.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BA66414C2274719D007AFDA7 /* ShowImagesusingSDWebImage.xcdatamodel */,
+			);
+			currentVersion = BA66414C2274719D007AFDA7 /* ShowImagesusingSDWebImage.xcdatamodel */;
+			path = ShowImagesusingSDWebImage.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BA6641372274719C007AFDA7 /* Project object */;
+}
