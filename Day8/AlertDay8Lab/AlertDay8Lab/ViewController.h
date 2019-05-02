@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIImagePickerControllerDelegate>
+- (IBAction)takePhoto:(UIButton *)sender;
+- (IBAction)choosePhoto:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UIImageView *myImageView;
 
 
 @end

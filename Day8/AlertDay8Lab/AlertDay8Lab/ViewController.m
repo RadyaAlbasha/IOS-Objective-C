@@ -39,4 +39,36 @@
     [self presentViewController:alertControler animated:YES completion:nil];
     
 }
+- (IBAction)takePhoto:(UIButton *)sender {
+    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]){
+        UIImagePickerController *picker = [UIImagePickerController new];
+        picker.allowsEditing = YES;
+        picker.delegate = self;
+        picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+        [self presentViewController:picker animated:YES completion:nil];
+    }
+    else{
+        UIAlertController *alertControler = [UIAlertController  alertControllerWithTitle:@"Error" message:@"Camera not found!" preferredStyle: UIAlertControllerStyleActionSheet ];
+        UIAlertAction * ok = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            printf("ok\n");
+        }];
+        
+        [alertControler addAction:ok];
+        [self presentViewController:alertControler animated:YES completion:nil];
+    }
+  
+}
+
+- (IBAction)choosePhoto:(UIButton *)sender {
+    UIImagePickerController *picker = [UIImagePickerController new];
+    picker.allowsEditing = YES;
+    picker.delegate = self;
+    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    [self presentViewController:picker animated:YES completion:nil];
+}
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString * ,id> *)info{
+    _myImageView.image = info[UIImagePickerControllerEditedImage];//maska el key bta3 a5er sora
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end
